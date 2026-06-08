@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
  * - Artistic dark mode layout with emerald/cyan gradients
  * - Dynamic animations and creative, non-generic layout
  * - Game as secondary section at the end
+ * - Quiz to assess learning
  */
 
 export default function Home() {
@@ -364,6 +365,108 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quiz Section - Educational Assessment */}
+      <section id="quiz" className="relative py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-black mb-4">
+              <span className="bg-gradient-to-r from-emerald-400 via-green-300 to-cyan-300 bg-clip-text text-transparent">
+                Teste Seus Conhecimentos
+              </span>
+            </h2>
+            <p className="text-xl text-emerald-100/70 max-w-2xl mx-auto">
+              Você aprendeu sobre sustentabilidade? Responda nosso quiz e veja como está seu conhecimento!
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-8">
+            {/* Quiz Question 1 */}
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-8 hover:border-emerald-400/60 transition-all">
+              <h3 className="text-xl font-bold text-emerald-300 mb-6">1. Qual é um dos três pilares da produção sustentável?</h3>
+              <div className="space-y-3">
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q1" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Maximizar lucro a qualquer custo</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q1" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Agricultura Sustentável</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q1" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Ignorar impactos ambientais</span>
+                </label>
+              </div>
+            </div>
+
+            {/* Quiz Question 2 */}
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-8 hover:border-emerald-400/60 transition-all">
+              <h3 className="text-xl font-bold text-emerald-300 mb-6">2. O que é o Programa Agrinho?</h3>
+              <div className="space-y-3">
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q2" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Um programa de educação ambiental para crianças rurais</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q2" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Um jogo de vídeo game</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q2" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Uma marca de produtos agrícolas</span>
+                </label>
+              </div>
+            </div>
+
+            {/* Quiz Question 3 */}
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-8 hover:border-emerald-400/60 transition-all">
+              <h3 className="text-xl font-bold text-emerald-300 mb-6">3. Qual prática é característica da Indústria Verde?</h3>
+              <div className="space-y-3">
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q3" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Aumento de resíduos industriais</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q3" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Eficiência energética e uso de energias renováveis</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q3" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Poluição descontrolada</span>
+                </label>
+              </div>
+            </div>
+
+            {/* Quiz Question 4 */}
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-8 hover:border-emerald-400/60 transition-all">
+              <h3 className="text-xl font-bold text-emerald-300 mb-6">4. Como o consumo consciente impacta a sustentabilidade?</h3>
+              <div className="space-y-3">
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q4" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Não tem impacto algum</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q4" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Cria demanda por produtos responsáveis e mercados sustentáveis</span>
+                </label>
+                <label className="flex items-center p-4 bg-slate-900/50 rounded-lg border border-emerald-500/20 hover:border-emerald-400/60 cursor-pointer transition-all">
+                  <input type="radio" name="q4" className="w-4 h-4" />
+                  <span className="ml-3 text-emerald-100/80">Aumenta apenas o consumo de plástico</span>
+                </label>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center pt-8">
+              <Button className="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white gap-2 text-lg px-10 py-6">
+                Verificar Respostas <BookOpen className="w-5 h-5" />
+              </Button>
+              <p className="text-emerald-100/60 mt-4">Você receberá um certificado ao acertar todas as questões!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-emerald-500/20 bg-slate-900/50 backdrop-blur-sm py-12">
         <div className="container mx-auto px-4">
@@ -417,6 +520,13 @@ export default function Home() {
         }
         .animate-fade-in {
           animation: fade-in 1s ease-out;
+        }
+        /* Hide Base44 edit badge */
+        #base44-edit-badge,
+        [id*="badge"],
+        [class*="badge"] {
+          display: none !important;
+          visibility: hidden !important;
         }
       `}</style>
     </div>
