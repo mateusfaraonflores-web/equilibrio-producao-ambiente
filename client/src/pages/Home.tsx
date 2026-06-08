@@ -345,7 +345,7 @@ export default function Home() {
               src="https://last-seed-bloom.base44.app"
               className="w-full h-screen rounded-2xl border-0"
               title="O Cristal de Lúmina - Jogo de Restauração Ambiental"
-              allowFullScreen
+              sandbox="allow-same-origin allow-scripts allow-popups"
               style={{
                 aspectRatio: '16 / 9',
                 minHeight: '600px',
