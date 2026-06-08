@@ -339,15 +339,18 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Game Container - Ready for Integration */}
-          <div id="game-container" className="relative w-full aspect-video bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl border-2 border-cyan-500/30 overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <Zap className="w-24 h-24 mx-auto text-cyan-400 animate-pulse" />
-                <p className="text-2xl font-bold text-cyan-300">Jogo Interativo</p>
-                <p className="text-emerald-100/60">Seu código de jogo será integrado aqui</p>
-              </div>
-            </div>
+          {/* Game Container - O Cristal de Lúmina */}
+          <div id="game-container" className="relative w-full bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl border-2 border-cyan-500/30 overflow-hidden shadow-2xl">
+            <iframe
+              src="https://last-seed-bloom.base44.app"
+              className="w-full h-screen rounded-2xl border-0"
+              title="O Cristal de Lúmina - Jogo de Restauração Ambiental"
+              allowFullScreen
+              style={{
+                aspectRatio: '16 / 9',
+                minHeight: '600px',
+              }}
+            />
           </div>
 
           <div className="text-center mt-8">
