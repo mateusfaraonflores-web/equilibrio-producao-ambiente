@@ -1,0 +1,42 @@
+/**
+ * Custom Animations
+ * - Float animation for hero crystal
+ * - Fade-in animation for content
+ * - Hide Base44 edit badge
+ */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Hide Base44 edit badge */
+#base44-edit-badge,
+[id*="badge"],
+[class*="badge"] {
+  display: none !important;
+  visibility: hidden !important;
+}
